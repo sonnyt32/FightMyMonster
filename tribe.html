@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight My Monster - Tribes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="fight_my_monster_logo.png" alt="Fight My Monster Logo">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Profile</a>
+            <a href="missions.html">My Missions</a>
+            <a href="players.html">Players</a>
+            <a href="village.html">Village</a>
+            <a href="tribe.html" class="active">Tribes</a>
+            <a href="#">Arcade</a>
+        </nav>
+        <div class="messages">
+            Messages: 0
+        </div>
+    </header>
+
+    <main class="tribes">
+        <div class="background">
+            <img src="tribes_background.png" alt="Tribes Background" class="background-image">
+            <div class="tribe-list">
+                <h2>Top Tribes</h2>
+                <div class="tribe" id="tribe1">
+                    <h3>Tribe Alpha</h3>
+                    <p>Glory: 150</p>
+                    <p>Members: 10</p>
+                    <button class="view-tribe">View Tribe</button>
+                    <button class="join-tribe">Join Tribe</button>
+                </div>
+                <div class="tribe" id="tribe2">
+                    <h3>Tribe Beta</h3>
+                    <p>Glory: 120</p>
+                    <p>Members: 8</p>
+                    <button class="view-tribe">View Tribe</button>
+                    <button class="join-tribe">Join Tribe</button>
+                </div>
+                <div class="tribe" id="tribe3">
+                    <h3>Tribe Gamma</h3>
+                    <p>Glory: 100</p>
+                    <p>Members: 5</p>
+                    <button class="view-tribe">View Tribe</button>
+                    <button class="join-tribe">Join Tribe</button>
+                </div>
+                <!-- Add more tribes as needed -->
+            </div>
+            <button class="create-tribe" onclick="document.getElementById('create-tribe-modal').style.display='block'">Create New Tribe</button>
+        </div>
+    </main>
+
+    <!-- Create Tribe Modal -->
+    <div id="create-tribe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('create-tribe-modal').style.display='none'">&times;</span>
+            <h2>Create a New Tribe</h2>
+            <label for="tribe-name">Tribe Name:</label>
+            <input type="text" id="tribe-name" required>
+            <label for="tribe-icon">Choose an Icon:</label>
+            <select id="tribe-icon">
+                <option value="icon1.png">Icon 1</option>
+                <option value="icon2.png">Icon 2</option>
+                <option value="icon3.png">Icon 3</option>
+            </select>
+            <button class="submit-tribe">Create Tribe</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fight My Monster</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight My Monster - Players</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="fight_my_monster_logo.png" alt="Fight My Monster Logo">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Profile</a>
+            <a href="missions.html">My Missions</a>
+            <a href="players.html" class="active">Players</a>
+            <a href="village.html">Village</a>
+            <a href="tribe.html">Tribes</a>
+            <a href="#">Arcade</a>
+        </nav>
+        <div class="messages">
+            Messages: 0
+        </div>
+    </header>
+
+    <main class="players-page">
+        <div class="map-container">
+            <img src="map.png" alt="Map" class="map">
+            <div class="players-container">
+                <div class="player-icon" title="Player 1" onclick="viewPlayer('Player 1')">
+                    <img src="player.png" alt="Player 1">
+                </div>
+                <div class="player-icon" title="Player 2" onclick="viewPlayer('Player 2')">
+                    <img src="player.png" alt="Player 2">
+                </div>
+                <div class="player-icon" title="Player 3" onclick="viewPlayer('Player 3')">
+                    <img src="player.png" alt="Player 3">
+                </div>
+                <!-- Add more player icons as needed -->
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

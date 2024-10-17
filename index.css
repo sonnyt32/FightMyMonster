@@ -1,0 +1,728 @@
+/* General body and layout styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.messages {
+    font-size: 14px;
+}
+
+/* Profile card styling */
+.profile-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General box container styling */
+.box-container {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Monsters section */
+.monsters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.placeholder {
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0;
+    color: #555;
+    border: 1px dashed #999;
+    padding: 20px;
+}
+
+/* Monster card styles */
+.monster-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 200px;
+    display: inline-block;
+}
+
+/* Button styling */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Fixed position settings box */
+.settings-box {
+    position: fixed; /* This keeps the box fixed to the screen */
+    top: 100px; /* Position it 100px from the top */
+    right: 20px; /* Always 20px from the right edge */
+    background-color: #222;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 150px;
+    color: white;
+}
+
+/* Friends List Section */
+.friends-list {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    min-width: 150px;
+    max-width: 100%;
+}
+
+.friends-list h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.friends-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.friends-list li {
+    margin: 5px 0;
+}
+
+.friends-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.friends-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .monster-card {
+        max-width: 100%;
+    }
+
+    .profile-card {
+        margin: 10px;
+    }
+
+    .settings-box {
+        top: auto;
+        bottom: 10px; /* Position it at the bottom for small screens */
+        right: 10px;
+    }
+    
+    /* Previous Battles Section */
+.previous-battles {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    width: 70%; /* Adjusted width */
+    min-width: 300px;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.previous-battles h3 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.previous-battles ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.previous-battles li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previous-battles li p {
+    margin: 0;
+}
+
+.previous-battles .battle-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.previous-battles .replay-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.previous-battles .replay-button:hover {
+    background-color: #0056b3;
+}
+
+.missions-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.missions-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.missions-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.missions-section li:last-child {
+    border-bottom: none;
+}
+
+.claim-button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.claim-button:hover {
+    background-color: #218838;
+}
+
+.missions-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.missions-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.missions-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    width: 0; /* Hide thumb */
+    height: 0;
+}
+
+.progress-bar:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.progress-container span {
+    font-size: 14px;
+    color: #333;
+}
+
+.claim-button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.claim-button:hover {
+    background-color: #218838;
+}
+
+/* Players page styles */
+.players-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.map-container {
+    margin: 20px 0;
+}
+
+.map {
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.player-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.player-icon img {
+    width: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Optional: for circular icons */
+    transition: transform 0.3s;
+}
+
+.player-icon:hover img {
+    transform: scale(1.1);
+}
+
+.player-icon::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 60px; /* Position above the player icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.player-icon:hover::after {
+    opacity: 1;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.village {
+    position: relative;
+}
+
+.background {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.button {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.main {
+    position: relative;
+}
+
+.dojo {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-selection {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.monster-card {
+    margin: 0 20px;
+}
+
+.floor-selection {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    text-align: center;
+}
+
+.floor-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floor-button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.floor-button:hover {
+    background-color: #45a049;
+}
+
+.door {
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    text-align: center;
+}
+
+.door-image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.enter-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.enter-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.potions {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.return-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff; /* Adjust for visibility against background */
+}
+
+.arrow-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff; /* Adjust for visibility against background */
+}
+
+.potion-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.potion {
+    border: 2px solid #fff; /* Adjust border color as needed */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    transition: transform 0.2s;
+}
+
+.potion:hover {
+    transform: scale(1.05);
+}
+
+.potion-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.monster-market {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.market-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-options label {
+    margin-right: 10px;
+}
+
+.monster-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.monster-card {
+    border: 2px solid #4CAF50; /* Adjust border color as needed */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.monster-card:hover {
+    transform: scale(1.05);
+}
+
+.monster-card img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.tribes {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.tribe-list {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.tribe {
+    border: 2px solid #4CAF50; /* Adjust border color as needed */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.create-tribe {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.create-tribe:hover {
+    background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+}

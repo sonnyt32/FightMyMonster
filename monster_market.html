@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight My Monster - Monster Market</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="fight_my_monster_logo.png" alt="Fight My Monster Logo">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Profile</a>
+            <a href="missions.html">My Missions</a>
+            <a href="players.html">Players</a>
+            <a href="village.html">Village</a>
+            <a href="#">Tribes</a>
+            <a href="#">Arcade</a>
+        </nav>
+        <div class="messages">
+            Messages: 0
+        </div>
+    </header>
+
+    <main class="monster-market">
+        <div class="background">
+            <img src="market_background.png" alt="Monster Market Background" class="background-image">
+            <div class="market-box">
+                <h2>Monster Market</h2>
+                <div class="sort-options">
+                    <label for="card-level">Sort by Card Level:</label>
+                    <select id="card-level">
+                        <option value="all">All Levels</option>
+                        <option value="1">Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+                        <option value="4">Level 4</option>
+                        <option value="5">Level 5</option>
+                    </select>
+                </div>
+                <div class="monster-cards">
+                    <div class="monster-card">
+                        <img src="monster_card_1.png" alt="Monster Card 1">
+                        <h3>Monster 1</h3>
+                        <p>Level: 1</p>
+                    </div>
+                    <div class="monster-card">
+                        <img src="monster_card_2.png" alt="Monster Card 2">
+                        <h3>Monster 2</h3>
+                        <p>Level: 2</p>
+                    </div>
+                    <div class="monster-card">
+                        <img src="monster_card_3.png" alt="Monster Card 3">
+                        <h3>Monster 3</h3>
+                        <p>Level: 3</p>
+                    </div>
+                    <div class="monster-card">
+                        <img src="monster_card_4.png" alt="Monster Card 4">
+                        <h3>Monster 4</h3>
+                        <p>Level: 4</p>
+                    </div>
+                    <div class="monster-card">
+                        <img src="monster_card_5.png" alt="Monster Card 5">
+                        <h3>Monster 5</h3>
+                        <p>Level: 5</p>
+                    </div>
+                    <!-- Add more monster cards as needed -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fight My Monster</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

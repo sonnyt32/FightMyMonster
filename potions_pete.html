@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight My Monster - Potions</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="fight_my_monster_logo.png" alt="Fight My Monster Logo">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Profile</a>
+            <a href="missions.html">My Missions</a>
+            <a href="players.html">Players</a>
+            <a href="village.html">Village</a>
+            <a href="tribe.html">Tribes</a>
+            <a href="#">Arcade</a>
+        </nav>
+        <div class="messages">
+            Messages: 0
+        </div>
+    </header>
+
+    <main class="potions">
+        <div class="background">
+            <img src="potions_background.png" alt="Potions Background" class="background-image">
+            <button class="return-button" onclick="window.history.back();">X</button>
+            <button class="arrow-button" id="view-more">➡️</button>
+            
+            <div class="potion-list">
+                <div class="potion" title="Restores health">
+                    <img src="health_potion.png" alt="Health Potion" class="potion-image">
+                    <h3>Health Potion</h3>
+                    <p>Price: 50 coins</p>
+                </div>
+                <div class="potion" title="Increases attack power">
+                    <img src="attack_potion.png" alt="Attack Potion" class="potion-image">
+                    <h3>Attack Potion</h3>
+                    <p>Price: 75 coins</p>
+                </div>
+                <div class="potion" title="Boosts defense temporarily">
+                    <img src="defense_potion.png" alt="Defense Potion" class="potion-image">
+                    <h3>Defense Potion</h3>
+                    <p>Price: 60 coins</p>
+                </div>
+                <div class="potion" title="Restores mana">
+                    <img src="mana_potion.png" alt="Mana Potion" class="potion-image">
+                    <h3>Mana Potion</h3>
+                    <p>Price: 40 coins</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fight My Monster</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
